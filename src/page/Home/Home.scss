@@ -1,0 +1,29 @@
+.home__cards{
+  max-width: 1200px;
+
+}
+.home__container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  
+}
+.home__button:not(:first-child){
+  margin-top: 50px !important;
+
+}
+.home__button{
+  line-height: 2.4;
+  color: white;
+  width: 200px;
+  text-decoration: none;
+  height: 40px;
+  background: #0065bb;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(80, 96, 110, 0.5);
+  &:hover{
+    background: #6691ec;
+  }
+}

@@ -1,24 +1,39 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import Home from "./page/Home/Home";
+import UserForm from "./page/UserForm/UserForm";
+import ChangeUser from "./page/ChangeUser/ChangeUser";
+import DeleteUser from "./page/DeleteUser/DeleteUser";
+import Users from "./page/Users/Users";
+
+import Container from "@material-ui/core/Container";
+import Paper from "@material-ui/core/Paper";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <div className='app'>   
+            <Paper className="app__paper">
+            <Switch>
+              <Route exact path='/'>
+                <Home />
+              </Route>
+              <Route path='/form'>
+                <UserForm />
+              </Route>
+              <Route path='/users'>
+                <Users />
+              </Route>
+              <Route path='/change'>
+                <ChangeUser />
+              </Route>
+              <Route path='/delete'>
+                <DeleteUser />
+              </Route>
+            </Switch>
+            </Paper>
+        </div>
+    </Router>
   );
 }
 

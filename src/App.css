@@ -1,19 +1,22 @@
-.App {
+.app {
   text-align: center;
+  height: 100%;
+  width: 100%;
+  position: absolute;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.app__paper{
+  max-width:500px;
+  height: 600px;
+  margin: 120px auto 0;
 }
 
 @media (prefers-reduced-motion: no-preference) {
-  .App-logo {
+  .app-logo {
     animation: App-logo-spin infinite 20s linear;
   }
 }
 
-.App-header {
+.app-header {
   background-color: #282c34;
   min-height: 100vh;
   display: flex;
@@ -24,7 +27,7 @@
   color: white;
 }
 
-.App-link {
+.app-link {
   color: #61dafb;
 }
 

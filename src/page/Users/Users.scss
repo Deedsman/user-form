@@ -1,0 +1,39 @@
+
+.pagination{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    span{
+        margin: 0 5px;
+        border-radius: 50px;
+        height: 20px;
+        width: 20px;
+        background: #1976d2;
+        line-height: 1.2;
+        color: #ffffff;
+        cursor: pointer;
+    }
+    span.selected{
+        color: black;
+        background:#98c9fa ;
+       
+    }
+}
+.home__cards{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.user__back{
+ position: absolute;
+ left: 15px;
+ cursor: pointer;
+ top: 15px
+}
+.change__contaier{
+    .home__cards{
+   flex-direction: column;
+    }
+}
